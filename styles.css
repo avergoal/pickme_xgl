@@ -656,3 +656,40 @@ select {
   background: rgba(255, 61, 0, 0.35);
   color: #ffffff;
 }
+/* Revert Sports section text back for light background */
+#sports {
+  color: #101828;
+}
+
+#sports h1,
+#sports h2,
+#sports h3 {
+  color: #101828;
+  text-shadow: none;
+}
+
+#sports p {
+  color: #344054;
+}
+
+#sports .muted {
+  color: #667085;
+}
+
+#sports .eyebrow {
+  color: #ff3d00;
+}
+
+/* Keep Sports cards readable */
+#sports .feature-card {
+  color: #101828;
+}
+
+#sports .feature-card h3 {
+  color: #101828;
+  text-shadow: none;
+}
+
+#sports .feature-card p {
+  color: #667085;
+}
