@@ -605,3 +605,54 @@ select {
   background: rgba(255, 61, 0, 0.35);
   color: #ffffff;
 }
+/* Dark background text readability fix */
+#challenge,
+#picks,
+#sports {
+  color: #ffffff;
+}
+
+#challenge h2,
+#picks h2,
+#sports h2 {
+  color: #ffffff;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+#challenge > .section-heading p,
+#picks .muted,
+#sports .muted {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+#challenge .eyebrow,
+#picks .eyebrow,
+#sports .eyebrow {
+  color: #38bdf8;
+}
+
+/* Keep white cards dark and readable */
+#challenge .timeline article,
+#picks .feature-card,
+#sports .feature-card {
+  color: #101828;
+}
+
+#challenge .timeline article h3,
+#picks .feature-card h3,
+#sports .feature-card h3 {
+  color: #101828;
+  text-shadow: none;
+}
+
+#challenge .timeline article p,
+#picks .feature-card p,
+#sports .feature-card p {
+  color: #667085;
+}
+
+/* Better selected text color */
+::selection {
+  background: rgba(255, 61, 0, 0.35);
+  color: #ffffff;
+}
