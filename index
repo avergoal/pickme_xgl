@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PickMe XGL — Action Sports Pick’em</title>
+    <meta name="description" content="Free-to-play X Games / XGL pick'em MVP with fantasy rosters, club leaderboards and partner rewards.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="mvp-shell">
+      <section class="hero">
+        <nav class="topbar" aria-label="Main navigation">
+          <a class="brand" href="#top" aria-label="PickMe XGL home"><span class="brand-mark">X</span> PickMe XGL</a>
+          <div class="nav-links">
+            <a href="#picks">Picks</a>
+            <a href="#fantasy">Fantasy</a>
+            <a href="#rewards">Rewards</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">Free-to-play fan engagement for X Games / XGL</p>
+            <h1>Action Sports Pick’em для сезона Summer 2026</h1>
+            <p class="lead">
+              Бесплатные pre-event прогнозы, fantasy-команды, клубная лояльность и призы от lifestyle-партнеров — без ставок, коэффициентов и квазивалюты.
+            </p>
+            <div class="cta-row">
+              <a class="primary-cta" href="#picks">Сделать прогноз</a>
+              <a class="secondary-cta" href="#challenge">Посмотреть MVP</a>
+            </div>
+            <div class="trust-row" aria-label="Product principles">
+              <span>Telegram Mini App + Web</span>
+              <span>Manual settlement</span>
+              <span>Youth-safe rewards</span>
+            </div>
+          </div>
+
+          <aside class="phone-preview" aria-label="Action Picks mobile preview">
+            <div class="phone-header">
+              <span>Today</span>
+              <strong>Sacramento Stop</strong>
+            </div>
+            <div class="pick-card hot">
+              <small>Deadline: 18:00 UTC</small>
+              <h2>BMX Park Final</h2>
+              <p>Кто возьмет gold?</p>
+              <button class="athlete-row"><span>M. Reynolds</span><b>XC LA</b></button>
+              <button class="athlete-row"><span>Kai Tanaka</span><b>Tokyo</b></button>
+              <button class="athlete-row"><span>Luna Costa</span><b>São Paulo</b></button>
+            </div>
+            <div class="mini-score">
+              <span>Your points</span>
+              <strong>248</strong>
+              <em>#12 weekly</em>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="challenge">
+        <div class="section-heading">
+          <p class="eyebrow">MVP scope</p>
+          <h2>Action Picks: Summer 2026 Challenge</h2>
+          <p>Тестируем спрос на цепочке Sacramento → Chiba → NOLA Championships с простыми прогнозами до старта финалов.</p>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Stop 01</span>
+            <h3>Sacramento</h3>
+            <p>Podium picks, score ranges и первые fantasy-очки за квалификации.</p>
+          </article>
+          <article>
+            <span>Stop 02</span>
+            <h3>Chiba</h3>
+            <p>Club allegiance battle: Tokyo vs New York vs Los Angeles vs São Paulo.</p>
+          </article>
+          <article>
+            <span>Final</span>
+            <h3>NOLA Championships</h3>
+            <p>Прогнозы на чемпионов сезона, brand leagues и финальные призы.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="picks">
+        <div>
+          <p class="eyebrow">Make Picks</p>
+          <h2>Прогнозы, которые легко объяснить фанам</h2>
+          <p class="muted">MVP избегает live-data сложности: дедлайны, закрытие прогнозов и ручной settlement после официальных результатов.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="feature-card">
+            <span>🥇</span>
+            <h3>Podium Pick</h3>
+            <p>Gold, silver, bronze, top-3 и точное место до дедлайна события.</p>
+          </article>
+          <article class="feature-card">
+            <span>⚡</span>
+            <h3>XGL Club Winner</h3>
+            <p>Какой клуб наберет больше очков на остановке или в сезоне.</p>
+          </article>
+          <article class="feature-card">
+            <span>📈</span>
+            <h3>Score Range</h3>
+            <p>Будет ли лучший run выше заданного порога или в выбранном диапазоне.</p>
+          </article>
+          <article class="feature-card">
+            <span>🔥</span>
+            <h3>Fan Props</h3>
+            <p>Breakout athlete, новый трюк, страна с максимумом медалей, head-to-head.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section fantasy-panel" id="fantasy">
+        <div class="section-heading light">
+          <p class="eyebrow">Fantasy roster</p>
+          <h2>Собери команду и играй за свой XGL Club</h2>
+        </div>
+        <div class="roster-grid">
+          <article>
+            <small>Skateboarder</small>
+            <strong>Street / Park pick</strong>
+            <span>+20 за gold</span>
+          </article>
+          <article>
+            <small>BMX rider</small>
+            <strong>Park / Dirt pick</strong>
+            <span>+10 за final</span>
+          </article>
+          <article>
+            <small>Wildcard</small>
+            <strong>Любая дисциплина</strong>
+            <span>+8 best run</span>
+          </article>
+          <article>
+            <small>Underdog</small>
+            <strong>Неочевидный top-3</strong>
+            <span>+10 bonus</span>
+          </article>
+          <article>
+            <small>XGL Club</small>
+            <strong>Tokyo / NY / LA / São Paulo</strong>
+            <span>+15 club win</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="rewards">
+        <div>
+          <p class="eyebrow">Partner rewards</p>
+          <h2>Engagement campaign вместо квазивалюты</h2>
+          <p class="muted">Все активные участники получают промокод, а недельные топы leaderboard — дополнительные призы от skate, sneaker, camera и event-партнеров.</p>
+        </div>
+        <div class="leaderboard-card">
+          <h3>Weekly Leaderboard</h3>
+          <div class="leader"><b>#1</b><span>TokyoTricks</span><em>412 pts</em></div>
+          <div class="leader"><b>#2</b><span>NolaFlip</span><em>398 pts</em></div>
+          <div class="leader"><b>#3</b><span>BMXMarta</span><em>371 pts</em></div>
+          <div class="leader"><b>#4</b><span>ClubLAfan</span><em>355 pts</em></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
