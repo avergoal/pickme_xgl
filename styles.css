@@ -568,3 +568,40 @@ select {
     padding: 28px;
   }
 }
+/* Fix readable text on dark sections */
+#picks,
+#sports {
+  color: #ffffff;
+}
+
+#picks h2,
+#sports h2 {
+  color: #ffffff;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+#picks .eyebrow,
+#sports .eyebrow {
+  color: #38bdf8;
+}
+
+#picks .muted,
+#sports .muted {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+#picks .feature-card,
+#sports .feature-card {
+  color: #101828;
+}
+
+#picks .feature-card p,
+#sports .feature-card p {
+  color: #667085;
+}
+
+/* Optional: make text selection less ugly */
+::selection {
+  background: rgba(255, 61, 0, 0.35);
+  color: #ffffff;
+}
