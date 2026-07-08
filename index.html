@@ -58,6 +58,66 @@
           </aside>
         </div>
       </section>
+      <section class="section action-panel" id="play">
+  <div class="section-heading light">
+    <p class="eyebrow">Play now</p>
+    <h2>Все действия прямо перед глазами</h2>
+    <p>
+      Выбери спорт, сделай прогноз, сохрани pick.
+      Это пока демо без backend — выбор сохранится в браузере.
+    </p>
+  </div>
+
+  <div class="steps-grid" aria-label="How to play">
+    <article>
+      <b>1</b>
+      <h3>Выбери соревнование</h3>
+      <p>BMX, Skateboarding, Surfing или Inline Skating.</p>
+    </article>
+
+    <article>
+      <b>2</b>
+      <h3>Сделай прогноз</h3>
+      <p>Gold winner, top-3, score range или fan prop.</p>
+    </article>
+
+    <article>
+      <b>3</b>
+      <h3>Забери очки</h3>
+      <p>После результата получаешь points, badges и шанс на приз.</p>
+    </article>
+  </div>
+
+  <div class="pick-studio">
+    <div class="control-card">
+      <label for="sportSelect">Соревнование</label>
+      <select id="sportSelect"></select>
+    </div>
+
+    <div class="control-card">
+      <label for="pickTypeSelect">Тип прогноза</label>
+      <select id="pickTypeSelect"></select>
+    </div>
+
+    <div class="control-card wide">
+      <label>Вариант</label>
+      <div class="option-list" id="optionList"></div>
+    </div>
+
+    <button class="save-pick" id="savePick">
+      Сохранить прогноз
+    </button>
+  </div>
+
+  <div class="my-picks">
+    <div>
+      <p class="eyebrow">My picks</p>
+      <h3>Мои прогнозы</h3>
+    </div>
+
+    <ul id="savedPicks"></ul>
+  </div>
+</section>
 
       <section class="section" id="challenge">
         <div class="section-heading">
@@ -115,39 +175,108 @@
       </section>
 
       <section class="section fantasy-panel" id="fantasy">
-        <div class="section-heading light">
-          <p class="eyebrow">Fantasy roster</p>
-          <h2>Собери команду и играй за свой XGL Club</h2>
-        </div>
-        <div class="roster-grid">
-          <article>
-            <small>Skateboarder</small>
-            <strong>Street / Park pick</strong>
-            <span>+20 за gold</span>
-          </article>
-          <article>
-            <small>BMX rider</small>
-            <strong>Park / Dirt pick</strong>
-            <span>+10 за final</span>
-          </article>
-          <article>
-            <small>Wildcard</small>
-            <strong>Любая дисциплина</strong>
-            <span>+8 best run</span>
-          </article>
-          <article>
-            <small>Underdog</small>
-            <strong>Неочевидный top-3</strong>
-            <span>+10 bonus</span>
-          </article>
-          <article>
-            <small>XGL Club</small>
-            <strong>Tokyo / NY / LA / São Paulo</strong>
-            <span>+15 club win</span>
-          </article>
-        </div>
-      </section>
+  <div class="section-heading light">
+    <p class="eyebrow">Fantasy roster</p>
+    <h2>Собери команду на ивент</h2>
+    <p>
+      Выбери 5 слотов. Очки начисляются за podium,
+      проход в финал, лучший run, медали и победу клуба.
+    </p>
+  </div>
 
+  <div class="fantasy-builder" id="fantasyBuilder"></div>
+
+  <button class="secondary-save" id="saveRoster">
+    Сохранить fantasy-команду
+  </button>
+
+  <div class="roster-summary" id="rosterSummary"></div>
+</section>
+    <section class="section split" id="sports">
+  <div>
+    <p class="eyebrow">Sports</p>
+    <h2>Прогнозы на понятные дисциплины</h2>
+    <p class="muted">
+      MVP стартует с pre-event picks:
+      дедлайны, закрытие прогнозов и ручной settlement после официальных результатов.
+    </p>
+  </div>
+
+  <div class="cards-grid">
+    <article class="feature-card">
+      <span>🚲</span>
+      <h3>BMX</h3>
+      <p>Park, Street, Dirt: gold winner, top-3, best run score.</p>
+    </article>
+
+    <article class="feature-card">
+      <span>🛹</span>
+      <h3>Skateboarding</h3>
+      <p>Street и Park: podium, breakout athlete, head-to-head.</p>
+    </article>
+
+    <article class="feature-card">
+      <span>🏄</span>
+      <h3>Surfing</h3>
+      <p>Heat winner, highest wave score, country medal count.</p>
+    </article>
+
+    <article class="feature-card">
+      <span>🛼</span>
+      <h3>Inline Skating</h3>
+      <p>Final qualifier, trick/record prop, score range.</p>
+    </article>
+  </div>
+</section>
+<section class="section split" id="sponsors">
+  <div>
+    <p class="eyebrow">Sponsors</p>
+    <h2>Партнерские челленджи вместо betting-механики</h2>
+    <p class="muted">
+      Все активные участники получают промокод,
+      а топы leaderboard — дополнительные призы.
+      Очки нельзя обменять на деньги или сертификат по курсу.
+    </p>
+  </div>
+
+  <div class="sponsor-grid">
+    <article>
+      <b>Red Bull</b>
+      <span>Best Trick Challenge</span>
+      <em>Energy + event access</em>
+    </article>
+
+    <article>
+      <b>Roxy</b>
+      <span>Surf Girls League</span>
+      <em>Merch + promo codes</em>
+    </article>
+
+    <article>
+      <b>Pepsi</b>
+      <span>Fan of the Week</span>
+      <em>Coupons + badges</em>
+    </article>
+
+    <article>
+      <b>GoPro</b>
+      <span>Best Run Replay</span>
+      <em>Camera gear raffle</em>
+    </article>
+
+    <article>
+      <b>Vans</b>
+      <span>Skate Shop League</span>
+      <em>Sneakers + store credit prizes</em>
+    </article>
+
+    <article>
+      <b>Local Park</b>
+      <span>Watch Quest</span>
+      <em>Session passes</em>
+    </article>
+  </div>
+</section>
       <section class="section split" id="rewards">
         <div>
           <p class="eyebrow">Partner rewards</p>
@@ -163,5 +292,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
